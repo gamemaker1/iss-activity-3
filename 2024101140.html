@@ -4,33 +4,38 @@
   </head>
   <body>
     <a-scene>
-      <a-box 
-        position="0 0.5 -4" 
-        rotation="0 45 0" 
-        depth="1" 
-        height="1" 
-        width="1"
+      <a-cone
+        position="0 0.5 -4"
+        rotation="0 45 0"
+        radius-bottom="0.5"
+        radius-top="0.1"
+        height="1"
         color="#4CC3D9"
-	  ></a-box>
+      ></a-cone>
 
-      <a-cylinder 
-        position="0 1.5 -4" 
-        radius="0.5" 
-        height="1" 
-		color="#FFC65D"
-	  ></a-cylinder>
+      <a-torus
+        position="0 1.9 -4"
+        rotation="0 45 0"
+        radius="0.5"
+        tube="0.15"
+        segments-radial="16"
+        segments-tubular="32"
+        color="#FFC65D"
+      ></a-torus>
 
-      <a-sphere 
-        position="0 2.5 -4" 
-        radius="0.5" 
-		color="#EF2D5E"
-	  ></a-sphere>
+      <a-tetrahedron
+        position="0 3.3 -4"
+        rotation="0 45 0"
+        radius="0.6"
+        color="#EF2D5E"
+      ></a-tetrahedron>
 
-      <a-plane 
-        position="0 0 -4" 
-        rotation="-90 0 0" 
-        width="4" 
-        height="4" 
+      <a-plane
+        position="0 0 -4"
+        rotation="-90 0 0"
+        width="4"
+        height="4"
+        color="#7BC8A4"
       ></a-plane>
     </a-scene>
   </body>
